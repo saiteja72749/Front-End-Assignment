@@ -30,13 +30,13 @@ const App = () => {
       <Filter onSearch={handleSearch} />
       
       <div className="main-content">
+      
       <RecipeList recipes={recipes} onFavorite={(recipe) => dispatch(toggleFavorite(recipe))} />
-
-
         
         {/* Favorites Sidebar */}
         <div className={`favorites-container ${showFavorites ? "open" : ""}`}>
-          <Favorites favorites={favorites} />
+        <Favorites favorites={favorites} onRemoveFavorite={(id) => dispatch(toggleFavorite({ id }))} />
+
         </div>
       </div>
     </div>
