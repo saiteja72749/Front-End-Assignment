@@ -13,7 +13,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    dispatch(fetchRecipes("pizza")); // Default search term
+    dispatch(fetchRecipes("pizza"));
   }, [dispatch]);
 
   const handleSearch = (term) => {

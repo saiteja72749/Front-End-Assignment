@@ -9,7 +9,7 @@ const RecipeList = ({ recipes, onFavorite }) => {
           <li key={recipe.id}>
             <h3>{recipe.title}</h3>
             <img src={recipe.image} alt={recipe.title} />
-            <button onClick={() => onFavorite(recipe.id)}>❤️ Favorite</button>
+            <button onClick={() => onFavorite(recipe.id)}>Favorite</button>
           </li>
         ))}
       </ul>
