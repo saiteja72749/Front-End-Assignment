@@ -1,7 +1,7 @@
 .favorites-container {
     position: fixed;
     top: 0;
-    right: -350px; /* Hidden by default */
+    right: -350px;
     width: 300px;
     height: 100vh;
     background: #fff;
@@ -12,6 +12,6 @@
   }
   
   .favorites-container.open {
-    right: 0; /* Slide into view */
+    right: 0;
   }
   
