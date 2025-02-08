@@ -3,18 +3,19 @@ const initialState = {
     favorites: [],
   };
   
-  const recipeReducer = (state = initialState, action) => {
+  const recipesReducer = (state = initialState, action) => {
     switch (action.type) {
       case "SET_RECIPES":
-        return { ...state, recipes: action.payload };
+        return { ...state, recipes: action.payload || [] };
   
       case "TOGGLE_FAVORITE":
-        const isFavorite = state.favorites.some((fav) => fav.id === action.payload);
+        const existingFavorite = state.favorites.find((fav) => fav.id === action.payload.id);
+  
         return {
           ...state,
-          favorites: isFavorite
-            ? state.favorites.filter((fav) => fav.id !== action.payload)
-            : [...state.favorites, state.recipes.find((recipe) => recipe.id === action.payload)],
+          favorites: existingFavorite
+            ? state.favorites.filter((fav) => fav.id !== action.payload.id) // Remove if exists
+            : [...state.favorites, action.payload], // Add if not exists
         };
   
       default:
@@ -22,5 +23,5 @@ const initialState = {
     }
   };
   
-  export default recipeReducer;
+  export default recipesReducer;
   

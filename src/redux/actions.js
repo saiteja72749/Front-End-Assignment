@@ -36,9 +36,8 @@ export const fetchRecipes = (query) => async (dispatch) => {
     }
   };
   
-  export const toggleFavorite = (recipe) => {
-    return {
-      type: "TOGGLE_FAVORITE",
-      payload: recipe,
-    };
-  };
+  export const toggleFavorite = (recipe) => ({
+    type: "TOGGLE_FAVORITE",
+    payload: recipe, // Pass full recipe object
+  });
+  

@@ -1,0 +1,68 @@
+/* Container Styling */
+.recipe-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading */
+.recipe-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Recipe List - Flexbox for layout */
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distributes items evenly */
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Individual Recipe Cards */
+.recipe-card {
+  width: calc(18% - 20px); /* 5 items per row */
+  min-width: 200px; /* Prevent shrinking */
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+/* Recipe Images */
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Recipe Title */
+.recipe-card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Favorite Button */
+.recipe-card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #ff6347;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.recipe-card button:hover {
+  background: #e5533d;
+}

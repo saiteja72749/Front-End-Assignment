@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.favorites-button {
+  background: #ffcc00; /* Add a visible background */
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  position: absolute;
+  left: 10px;
+  color: black; /* Ensure text is visible */
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.navbar-content {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.8); /* Navbar background starts after button */
+  padding: 10px 20px;
+  margin-left: 150px; /* Adjust to match button width */
+  color: white;
+  display: flex;
+  justify-content: center;
+}
