@@ -7,6 +7,7 @@ import Favorites from "./components/Favorites";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import "./styles/global.css";
+// import { DropDown } from "./components/DropDown";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -27,19 +28,20 @@ const App = () => {
   return (
     <div className="app-container">
       <Navbar showFavorites={showFavorites} onToggleFavorites={() => setShowFavorites(!showFavorites)} />
-      <Filter onSearch={handleSearch} />
+       <Filter onSearch={handleSearch} />
       
       <div className="main-content">
       
       <RecipeList recipes={recipes} onFavorite={(recipe) => dispatch(toggleFavorite(recipe))} />
         
-        {/* Favorites Sidebar */}
-        <div className={`favorites-container ${showFavorites ? "open" : ""}`}>
+         Favorites Sidebar
+         <div className={`favorites-container ${showFavorites ? "open" : ""}`}>
         <Favorites favorites={favorites} onRemoveFavorite={(id) => dispatch(toggleFavorite({ id }))} />
-
+    	{/* <h1>sai</h1> */}
+      {/* <DropDown/> */}
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
