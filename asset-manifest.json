@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Front-End-Assignment/static/css/main.689fec7a.css",
-    "main.js": "/Front-End-Assignment/static/js/main.89f4ed8b.js",
-    "index.html": "/Front-End-Assignment/index.html",
-    "main.689fec7a.css.map": "/Front-End-Assignment/static/css/main.689fec7a.css.map",
-    "main.89f4ed8b.js.map": "/Front-End-Assignment/static/js/main.89f4ed8b.js.map"
+    "main.css": "/Recipe_Finder/static/css/main.689fec7a.css",
+    "main.js": "/Recipe_Finder/static/js/main.89f4ed8b.js",
+    "index.html": "/Recipe_Finder/index.html",
+    "main.689fec7a.css.map": "/Recipe_Finder/static/css/main.689fec7a.css.map",
+    "main.89f4ed8b.js.map": "/Recipe_Finder/static/js/main.89f4ed8b.js.map"
   },
   "entrypoints": [
     "static/css/main.689fec7a.css",
